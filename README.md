@@ -10,6 +10,9 @@ Utilizou-se o Realtime Database (firebase) para armazenar os dados de cada usuá
 
 <p align="center">
     <img width = "300" height= "600" src = "assets/to_readme/app_1.gif">
+</p>
+<br/>
+<p align="center">
     <img width = "300" height= "600" src = "assets/to_readme/app_2.gif">
 </p>
 

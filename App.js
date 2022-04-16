@@ -1,20 +1,24 @@
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { LogBox } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+import firebase from './src/services/firebaseConnection';
+import AuthProvider from './src/contexts/auth';
+import Routes from './src/routes';
+
+LogBox.ignoreAllLogs();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+
+    <NavigationContainer>
+      <AuthProvider>
+        <StatusBar style='light' translucent = {false}/>
+        <Routes/>
+      </AuthProvider>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

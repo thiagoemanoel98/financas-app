@@ -28,8 +28,8 @@ ___
 Clone o projeto e acesse a sua pasta: 
 
 ```sh
-$ git clone https://github.com/thiagoemanoel98/conversor-moedas-app.git
-$ cd conversor-moedas-app
+$ git clone https://github.com/thiagoemanoel98/financas-app.git
+$ cd financas-app
 ```
 
 Instale as dependências do projeto e inicie:
